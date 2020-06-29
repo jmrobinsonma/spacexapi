@@ -1,0 +1,28 @@
+<div class="container" style="text-align: center;">
+	<h1>SPACE-X MISSION REVIEW</h1>
+</div>
+<div>
+	<h3>MISSION NAME: {{ result['mission_name'] }}</h3>
+</div>
+<div>
+	<h3>LAUNCH DATE: {{ result['launch_date_local'].split('T')[0] }}</h3>
+</div>
+<div>
+	<h3>CREW: {{ result['crew'] }}</h3>
+</div>
+<div>
+	<h3>DETAILS:</h3>
+	<h3>{{ result['details'] }}</h3>
+</div>
+<div>
+	<h3>LAUNCH SUCCESS: {{ result['launch_success'] }}</h3>
+</div>
+<div>
+	<h3>PAYLOAD: {{ result['rocket']['second_stage']['payloads'][0]['payload_type'] }}</h3>
+</div>
+<div>
+	<h3>ROCKET: {{ result['rocket']['rocket_name'] }}</h3>
+</div>
+<div>
+	<h3>LAUNCH SITE: {{ result['launch_site']['site_name_long'] }}</h3>
+</div>
